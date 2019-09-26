@@ -1,0 +1,28 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Teckro Assignment" parallel="false">
+    <test name="Check availability UI">
+        <classes>
+            <class name="uiTestSuite.tests.CheckAvailabilityDatePicker"/>
+        </classes>
+    </test>
+
+    <test name="Check Booking UI">
+        <classes>
+            <class name="uiTestSuite.tests.CheckBookARoom"/>
+        </classes>
+    </test>
+
+    <test name="Check Booking API">
+        <classes>
+            <class name="apiTestSuite.tests.BookRoom"/>
+        </classes>
+    </test>
+
+    <test name="Check Availability API">
+        <classes>
+            <class name="apiTestSuite.tests.CheckAvailability"/>
+        </classes>
+    </test>
+
+</suite>
